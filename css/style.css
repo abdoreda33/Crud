@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lobster', "cursive";
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background-color: #333;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.brand{
+    text-decoration: none;
+    font-size: 32px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.brand span{
+    color: rgb(69, 69, 249);
+}
+.login ul {
+    display: flex;
+    align-items: center;
+
+}
+ul#user-info{
+    display: none;
+  
+}
+#user-info li{
+    position: relative;
+}
+#user-info li i {
+    color: #fff;
+    font-size: 17px;
+    padding-left: 15px;
+    cursor: pointer;
+   
+}
+#user-info li span{
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    font-family: 'sans-serif';
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    top:-9px;
+    right: -11px;
+    line-height: 20px;
+    
+}
+.carts-products{
+    position: absolute;
+    width: 220px;
+   transform: translate(-42%,0);
+   background-color: #ddd;
+   top: 46px;
+   padding: 10px;
+   text-align: center; 
+   font-family: 'sans-serif';
+   display: none;
+   
+}
+.carts-products div  p {
+    border-bottom: 2px solid green;
+    padding: 7px;
+    background-color: #cdc9c9;
+    margin: 5px;
+  font-family:  "cursive";
+  font-size: 16px;
+  font-weight: 600;
+ text-transform: uppercase;
+    
+   
+}
+.carts-products a {
+    display: block;
+    background-color: green;
+    padding: 7px;
+ text-align: center;
+    margin-left: 5px;
+    margin-top: 9px;
+ 
+}
+.login li{
+    list-style: none;  
+}
+.login li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-left: 20px;
+    
+}
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform:translate(-50%,-50%) ;
+   width: 40%;
+   text-align: center;
+   background-color: #bc6ff1;
+   padding: 20px;
+   font-family: 'Roboto Slab', serif;
+}
+
+/**     form   */
+.section-form h2{
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color:#fff ;
+}
+
+
+.section-form form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.section-form form input[type="submit"]{
+    font-size: 25px;
+  height: auto;
+  cursor: pointer;
+}
+.section-form form input[type="submit"]:hover{
+    opacity: 0.8;
+}
+#search{
+    width: 60%;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    font-family: 'cairo';   
+}
+/*products*/
+
+.products{
+    width: 60%;
+    margin-bottom: 10px; 
+}
+
+.product-item{
+    display: flex;
+    border: 1px solid #ddd;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 15px;
+}
+.product-item img{
+width: 150px;
+height: 140px;
+margin-right: 30px;
+}
+.product-desc h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 4px;   
+    cursor: pointer;
+}
+.product-desc h1:hover{
+    color: rgb(54, 54, 245);
+}
+.product-desc p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.product-desc span{
+    font-size: 17px;
+    padding-top: 10px;
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+  
+
+.product-action{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    position: relative;  
+}
+.product-action button{
+    background-color: green;
+    width: 135px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.product-action button:hover{
+    
+    background-color: rgb(7, 93, 7);
+}
+.product-action i{
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    font-size: 22px;
+    cursor: pointer;
+    color: #e1d8d8;
+}
+
+.noproducts{
+    color: red;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-family: 800;
+    text-align: center;
+  margin-top: 250px;
+  padding: 10px;
+}
+
+.item-details img{
+width: 100%;
+margin: 10px;
+padding: 2px;
+border: 2px solid gray;
+height:480px;
+object-fit: cover;
+}
+.item-details h2,p{
+    font-family: sans-serif;
+   text-align: center;
+}
+.item-details h2{
+    margin-bottom: 10px;
+}
